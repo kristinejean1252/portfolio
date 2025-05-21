@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"/>
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" href="styles.css"/>
+  <title>Tine Website</title>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav>
+    <div class="nav-container">
+      <div class="logo" data-aos="zoom-in" data-aos-duration="1000">
+     
+      </div>
+      <div class="links">
+        <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100"><a href="#home">Home</a></div>
+        <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200"><a href="#home">About</a></div>
+        <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400"><a href="#projects">Projects</a></div>
+        <div class="link contact-btn" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600"><a href="#contact">Contact Me</a></div>
+      </div>
+      <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+    </div>
+    <div class="dropdown">
+      <div class="links">
+        <a href="#home">Home</a>
+        <a href="#home">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+        <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HOME Section -->
+  <section id="home">
+    <div class="main-container">
+      <div class="image" data-aos="zoom-in-right" data-aos-duration="2500">
+        <div class="circle-img">
+          <img src="tine.png" alt="Tine profile picture">
+        </div>
+      </div>
+      <div class="content">
+        <h1 data-aos="fade-left" data-aos-duration="1000" data-aos-delay="800">Hey I'm <span>Tine!</span></h1>
+        <div class="typewriter" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="900">
+          I'm a 2nd year BS Information Technology Student.
+          <p data-aos="flip-up" data-aos-duration="1000" data-aos-delay="1000">
+            This is my portfolio where I showcase all the projects I made throughout the whole semester.
+          </p>
+        </div>
+        <div class="btn" data-aos="zoom-out-left" data-aos-duration="1000" data-aos-delay="1300">
+          <button onclick="scrollToContact()">Let's Work Together</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS Section -->
+  <section id="projects">
+    <h2 class="section-title">My Projects</h2>
+    <div class="filter-buttons">
+      <button class="filter-btn active" data-category="all">All</button>
+      <button class="filter-btn" data-category="prelims">Prelims</button>
+      <button class="filter-btn" data-category="midterm">Midterm</button>
+      <button class="filter-btn" data-category="semifinals">Semi-finals</button>
+      <button class="filter-btn" data-category="demos">Demos</button>
+    </div>
+    <div class="projects-grid">
+      <div class="project-item" data-category="prelims">
+        <img src="personalweb.png" alt="Personal Website">
+        <h3>Personal Website</h3>
+        <p>A personalized website to get to know me.</p>
+        <a href="https://tinepersonalwebsite.netlify.app/" target="_blank">View</a>
+      </div>
+      <div class="project-item" data-category="prelims">
+        <img src="googleclone.png" alt="Google Clone">
+        <h3>Google Clone</h3>
+        <p>A simple replica of Google’s homepage using HTML and CSS.</p>
+        <a href="https://googletine.netlify.app/" target="_blank">View</a>
+      </div>
+      <div class="project-item" data-category="prelims">
+        <img src="businesscard.png" alt="Business Card">
+        <h3>Business Card</h3>
+        <p>A digital business card.</p>
+        <a href="https://tinebusinesscard.netlify.app/?fbclid=IwY2xjawIY1CNleHRuA2FlbQIxMAABHf2-UgELohKRFFHEhkDHKuYo2eyc9jfatLXodq9kT6P6PH8z6yi6Jgst9Q_aem_r6gH5c9yhScjx2MorX7ohA#" target="_blank">View</a>
+      </div>
+       <div class="projects-grid">
+      <div class="project-item" data-category="prelims">
+        <img src="space.png" alt="Space Exploration">
+        <h3>Space Exploration Site</h3>
+        <p>A site highlighting major space discoveries.</p>
+        <a href="https://hersheycat.netlify.app/" target="_blank">View</a>
+      </div>
+      <div class="project-item" data-category="prelims">
+        <img src="birthday.png" alt="Birthday GIF Site">
+        <h3>Birthday GIF Site</h3>
+        <p>A fun site to display animated birthday greetings using GIFs.</p>
+        <a href="https://ashnunu.netlify.app/" target="_blank">View</a>
+      </div>
+      <div class="project-item" data-category="midterm">
+        <img src="counterapp.png" alt="Counter-App">
+        <h3>Counter-App</h3>
+        <p>A simple counter app that lets users increase, decrease, or reset a numerical value.</p>
+        <a href="https://appcountertine.netlify.app/" target="_blank">View</a>
+      </div>
+      <div class="project-item" data-category="midterm">
+        <img src="blackjack.png" alt="Blackjack">
+        <h3>Blackjack</h3>
+        <p>A browser-based card game simulating a real blackjack experience.</p>
+        <a href="https://tineblackjack.netlify.app/" target="_blank">View</a>
+      </div>
+      <div class="project-item" data-category="midterm">
+        <img src="chromeextension.png" alt="Chrome Extension">
+        <h3>Chrome Extension</h3>
+        <p>A custom Chrome extension for saving.</p>
+        <a href="https://leadtrackercreeper.netlify.app/" target="_blank">View</a>
+      </div>
+      <div class="project-item" data-category="semifinals">
+        <img src="zendayatheory.png" alt="Zendaya Theory">
+        <h3>Zendaya Theory</h3>
+        <p>An eerie horror game filled with jumpscares.</p>
+        <a href="https://thezendayatheory.netlify.app/" target="_blank">View </a>
+      </div>
+      <div class="project-item" data-category="demos">
+        <img src="chromeextension.png" alt="Demo">
+        <h3>Chrome Extension Demo</h3>
+        <p>A live demo showcasing my personalized Chrome extension.</p>
+        <a href="https://www.youtube.com/watch?v=MKdCjYM223M" target="_blank">View Demo</a>
+      </div>
+      <div class="project-item" data-category="demos">
+        <img src="login.png" alt="Demo">
+        <h3>Full Stack Login and Signup</h3>
+        <p>A demo of my working authentication system with user login and registration.</p>
+        <a href="https://www.youtube.com/watch?v=BQQxHyc4BDs" target="_blank">View Demo</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT Section -->
+  <section id="contact">
+    <h2 class="section-title">Let's Connect!</h2>
+
+    <div class="contact-info">
+      <p><strong>Email:</strong> 20230028478@my.xu.edu.ph</p>
+      <p><strong>Phone:</strong> +63 9656102010</p>
+    </div>
+
+    <div class="socials">
+      <a href="https://www.facebook.com/kristine.jean.baygan.2024/"aria-label="Facebook">
+        <i class="fa-brands fa-facebook"></i>
+      </a>
+      <a href="https://github.com/kristinejean1252" aria-label="GitHub">
+        <i class="fa-brands fa-github"></i>
+        <a href="https://www.instagram.com/kyuutine/"aria-label="GitHub">
+        <i class="fa-brands fa-instagram"></i>
+      </a>
+    </div>
+  </section>
+
+  <!-- Scripts -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({ offset: 0 });
+
+    function hamburg() {
+      document.querySelector(".dropdown").style.transform = "translateY(0px)";
+    }
+
+    function cancel() {
+      document.querySelector(".dropdown").style.transform = "translateY(-500px)";
+    }
+
+    function scrollToContact() {
+      document.getElementById("contact").scrollIntoView({ behavior: "smooth" });
+    }
+
+    document.querySelectorAll('.filter-btn').forEach(button => {
+      button.addEventListener('click', () => {
+        const category = button.getAttribute('data-category');
+        document.querySelectorAll('.filter-btn').forEach(btn => btn.classList.remove('active'));
+        button.classList.add('active');
+
+        document.querySelectorAll('.project-item').forEach(item => {
+          const itemCategory = item.getAttribute('data-category');
+          item.style.display = (category === 'all' || itemCategory === category) ? 'block' : 'none';
+        });
+      });
+    });
+  </script>
+</body>
+</html>
